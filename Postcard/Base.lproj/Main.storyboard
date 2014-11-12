@@ -104,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBR-CK-egm"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bar-oc-o7R">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="179" width="258" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="yXc-ZX-moj"/>
                                 <exclude reference="pfU-oy-7vy"/>
                                 <exclude reference="lq5-xl-ZPK"/>
+                                <exclude reference="Bar-oc-o7R"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,10 +132,12 @@
                                 <include reference="yXc-ZX-moj"/>
                                 <include reference="pfU-oy-7vy"/>
                                 <include reference="lq5-xl-ZPK"/>
+                                <include reference="Bar-oc-o7R"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="lblName" destination="Bar-oc-o7R" id="Tae-rP-w77"/>
                         <outlet property="mailButton" destination="lq5-xl-ZPK" id="qVL-X0-Ia3"/>
                         <outlet property="messageLabel" destination="Vdn-Bn-ewe" id="xLx-60-frF"/>
                         <outlet property="txtEnterMessage" destination="pfU-oy-7vy" id="OmV-S9-iP7"/>
